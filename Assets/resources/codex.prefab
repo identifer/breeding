@@ -1,0 +1,678 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1138872443298358}
+  m_IsPrefabParent: 1
+--- !u!1 &1138872443298358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4262826175855914}
+  - component: {fileID: 114494776383815690}
+  m_Layer: 0
+  m_Name: codex
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4262826175855914
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1138872443298358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114494776383815690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1138872443298358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a38f6d3d4d1a1d47be9ee2e122515f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DNAPrefabPath: Assets/resources/DNA/
+  CreaturePrefabPath: Assets/resources/creature/
+  DNAPool:
+  - {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7, type: 2}
+  - {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531, type: 2}
+  - {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269, type: 2}
+  - {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19, type: 2}
+  - {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac, type: 2}
+  - {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583, type: 2}
+  - {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069, type: 2}
+  - {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1, type: 2}
+  - {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad, type: 2}
+  - {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f, type: 2}
+  CreaturePool:
+  - {fileID: 114737211700634582, guid: 5486981c31c2f5b45b0619cf5f197bb2, type: 2}
+  - {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033, type: 2}
+  - {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50, type: 2}
+  - {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da, type: 2}
+  - {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61, type: 2}
+  - {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9, type: 2}
+  - {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e, type: 2}
+  - {fileID: 114007739598707010, guid: c9dd85b0f5770ad4486953d29cb08e8b, type: 2}
+  - {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b, type: 2}
+  - {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19, type: 2}
+  CodexEntries:
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114737211700634582, guid: 5486981c31c2f5b45b0619cf5f197bb2,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114007739598707010, guid: c9dd85b0f5770ad4486953d29cb08e8b,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114737211700634582, guid: 5486981c31c2f5b45b0619cf5f197bb2,
+      type: 2}
+    FatherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114737211700634582, guid: 5486981c31c2f5b45b0619cf5f197bb2,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114737211700634582, guid: 5486981c31c2f5b45b0619cf5f197bb2,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114768777887470124, guid: e83ae5f781c556e41818db171073ce19,
+      type: 2}
+    FatherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114172010775428624, guid: bafd2eb7889d81844ba8f710551957b9,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114341588927294288, guid: ad89d84725b8d174aa73712ad5be3d50,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114859674962842842, guid: 76724164fba906d4cbfc1baf7362da61,
+      type: 2}
+    FatherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114576086393564234, guid: b44c101c024b7874b82c40e4439af9da,
+      type: 2}
+    FatherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114737211700634582, guid: 5486981c31c2f5b45b0619cf5f197bb2,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114532055763672768, guid: 0c5b08d4349b0964c9b883ffbf0ea88e,
+      type: 2}
+    FatherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114943866300152388, guid: f18f72f9a0d37b9488c4c21d93bee033,
+      type: 2}
+    FatherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+  - Creature: {fileID: 114737211700634582, guid: 5486981c31c2f5b45b0619cf5f197bb2,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114017500840452202, guid: 9cf33e0a8db8c4d44bf8cd06ea67dbf7,
+      type: 2}
+  - Creature: {fileID: 114737211700634582, guid: 5486981c31c2f5b45b0619cf5f197bb2,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114418717351013310, guid: 27ec203b2575ee94d8a047c79c928531,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114134687099131646, guid: c076e02eb15078242b1c4fa6ad3eb269,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114292783795769922, guid: faff1f99538292c42b22780d3ec2ff19,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114377515745639008, guid: b41afb5242907c94284ec49f36f10fac,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114646495171868460, guid: 6eac32d800583de4588993edadd12583,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114418555652815530, guid: d58a480282e8beb46aaf6ac10834a069,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114046981705108060, guid: 7cba2fa881bb7be408d899a56bed27c1,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114722677147707734, guid: 31446bc996675984e84b742f3ec63dad,
+      type: 2}
+  - Creature: {fileID: 114090022833947656, guid: 5f2230b5ff4a2474fa0111969b57aa7b,
+      type: 2}
+    FatherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
+    MotherDNA: {fileID: 114287860264308030, guid: e094dcf2fba92554a924d65ea0d5490f,
+      type: 2}
