@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversation>
+	<default_branches>
+		<branch question="default" />
+	</default_branches>
+	<question_list>
+		<question name="default" text="咳咳咳，咳咳，咳咳咳咳……">
+			<answer text="姚大河临时资源">
+				<action do="quit()" />
+			</answer>
+		</question>
+	</question_list>
+</conversation>

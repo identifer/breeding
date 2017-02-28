@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversation>
+	<default_actions>
+		<action do="conversation.desire_repeat = random_except(1,4, npc.last_repeat)" if="npc.start_repeat"/>
+	</default_actions>
+	<default_branches>
+		<branch question="ask_dontborder" if = "mod(npc.talk_count, 16) == 8"/>
+		<branch question="ask_walkaround" if = "mod(npc.talk_count, 16) == 0"/>
+		<branch question="repeat_4" if = "conversation.desire_repeat == 4"/>
+		<branch question="repeat_3" if = "conversation.desire_repeat == 3"/>
+		<branch question="repeat_2" if = "conversation.desire_repeat == 2"/>
+		<branch question="repeat_1" if = "conversation.desire_repeat == 1"/>
+		<branch question="default" />
+	</default_branches>
+	<question_list>
+		<question name="default" text="咳咳咳，咳咳，咳咳咳咳……">
+			<answer id="1" text="请问，这是哪儿？">
+				<branch question="explain" />
+			</answer>
+			<answer id="2" text="请问，您是谁？">
+				<branch question="explain" />
+			</answer>
+		</question>
+		<question name="explain" text="噩梦！这是场梦，被诅咒的噩梦！">
+			<answer id="1" text="请问，这是哪儿？" if="conversation.last_answer_id != 1 && !npc.start_repeat">
+				<action do="npc.start_repeat = true" />
+				<branch question="explain" />
+			</answer>
+			<answer id="2" text="请问，您是谁？" if="conversation.last_answer_id != 2 && !npc.start_repeat">
+				<action do="npc.start_repeat = true" />
+				<branch question="explain" />
+			</answer>
+			<answer text="噩梦？">
+				<action do="npc.start_repeat = true" />
+				<action do="quit()" />
+			</answer>
+		</question>
+		<question name="repeat_1" text="西边有座大山！">
+			<answer text="我应该去西边看看">
+				<action do="npc.last_repeat = 1" />
+				<action do="quit()" />
+			</answer>
+		</question>
+		<question name="repeat_2" text="向北是条大河！">
+			<answer text="我应该去北边看看">
+				<action do="npc.last_repeat = 2" />
+				<action do="quit()" />
+			</answer>
+		</question>
+		<question name="repeat_3" text="东边！到东边去">
+			<answer text="东边有什么稀奇的东西？">
+				<action do="npc.last_repeat = 3" />
+				<action do="quit()" />
+			</answer>
+		</question>
+		<question name="repeat_4" text="南方是个温暖潮湿的地方。">
+			<answer text="南边，诗和远方啊。">
+				<action do="npc.last_repeat = 4" />
+				<action do="quit()" />
+			</answer>
+		</question>
+		<question name="ask_dontborder" text="年轻人，你在这里和一个垂死之人浪费时间没有什么意义">
+			<answer text="那我应该做点什么？">
+				<action do="quit()" />
+			</answer>
+			<answer text="垂死之人可有名号？" if="npc.can_ask_name && !npc.told_name">
+				<branch question="be_ask_real_name"/>
+			</answer>
+		</question>
+		<question name="ask_walkaround" text="诅咒！张开你的眼睛看看这个世界吧！到处都是诅咒！">
+			<answer text="该去哪里才好呢……">
+				<action do="npc.can_ask_name = true" />
+				<action do="quit()" />
+			</answer>
+		</question>
+		<question name="be_ask_real_name" text="何必问？">
+			<answer text="只是随口问问……">
+				<action do="npc.told_name = true"/>
+				<action do="quit()" />
+			</answer>
+			<answer text="凡人皆有一死！">
+				<action do="show_npc_name(npc.id)"/>
+				<branch question="show_real_name" />
+			</answer>
+		</question>
+		<question name="show_real_name" text="嗯，吾乃何必问。">
+			<answer text="原来是何必问先生。">
+				<action do="npc.told_name = true"/>
+				<action do="quit()" />
+			</answer>
+		</question>
+	</question_list>
+</conversation>

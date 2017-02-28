@@ -66,7 +66,7 @@ public class RadarMap : MonoBehaviour
         {
             lines[i] = bgMesh[faces[i]];
         }
-        bgLinesRenderer.numPositions = lines.Length;
+        bgLinesRenderer.positionCount = lines.Length;
         bgLinesRenderer.SetPositions(lines);
     }
 
