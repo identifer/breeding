@@ -66,7 +66,7 @@ public class NPC : MonoBehaviour
             return;
         }
 
-        conversation = Conversation.CreateFromXML(Application.streamingAssetsPath + "/" + conversationFileName);
+        conversation = Conversation.CreateFromXML(Path.Combine(Application.streamingAssetsPath, conversationFileName));
         if (conversation == null)
         {
             Destroy(gameObject);
@@ -83,7 +83,7 @@ public class NPC : MonoBehaviour
     {
         if (save != null)
         {
-            string saveName = Application.streamingAssetsPath + "/" + ID + ".save";
+            string saveName = Path.Combine(Application.streamingAssetsPath, ID + ".save");
             save.SaveToFile(saveName);
             save.Dispose();
         }
@@ -107,7 +107,7 @@ public class NPC : MonoBehaviour
     private void InitializeSave()
     {
         save = new Save();
-        string saveName = Application.streamingAssetsPath + "/" + ID + ".save";
+        string saveName = Path.Combine(Application.streamingAssetsPath, ID + ".save");
         if (File.Exists(saveName))
         {
             save.LoadFromFile(saveName);

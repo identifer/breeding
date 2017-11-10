@@ -27,6 +27,9 @@ public class World : MonoBehaviour
     NPC hoverNPC = null;
     bool inConversation = false;
 
+    string globalSavePath = "";
+    string playerSavePath = "";
+
     void Awake()
     {
         instance = this;
@@ -35,12 +38,13 @@ public class World : MonoBehaviour
         Context.Register(adapter, "show_npc_name");
 
         //加载数据
-        string path = Application.streamingAssetsPath + "/";
-        if (File.Exists(path + "global.save"))
-            Context.GlobalSave.LoadFromFile(path + "global.save");
+        globalSavePath = Path.Combine(Application.streamingAssetsPath, "global.save");
+        if (File.Exists(globalSavePath))
+            Context.GlobalSave.LoadFromFile(globalSavePath);
 
-        if (File.Exists(path + "player.save"))
-            Context.PlayerSave.LoadFromFile(path + "player.save");
+        playerSavePath = Path.Combine(Application.streamingAssetsPath, "player.save");
+        if (File.Exists(playerSavePath))
+            Context.PlayerSave.LoadFromFile(playerSavePath);
 
         player = charactor.GetComponent<Player>();
     }
@@ -48,9 +52,8 @@ public class World : MonoBehaviour
     private void OnDestroy()
     {
         //加载数据
-        string path = Application.streamingAssetsPath + "/";
-        Context.GlobalSave.SaveToFile(path + "global.save");
-        Context.PlayerSave.SaveToFile(path + "player.save");
+        Context.GlobalSave.SaveToFile(globalSavePath);
+        Context.PlayerSave.SaveToFile(playerSavePath);
     }
 
     void FixedUpdate()
